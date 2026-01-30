@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07142b" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="home">
+  <!-- Música da HOME (troque o arquivo em /assets/home.mp3) -->
+  <audio id="bgmHome" class="audioHidden" autoplay loop preload="auto" playsinline>
+    <source src="assets/home.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main class="app">
+    <header class="hero">
+      <div class="badge">💙 surpresa</div>
+      <h1 class="h1">Um cantinho só nosso</h1>
+      <p class="sub"></p>
+    </header>
+
+    <!-- Card de senha -->
+    <section class="card" id="authCard">
+      <h2 class="h2">Senha</h2>
+
+      <div class="field">
+        <label for="password" class="label">Digite a senha</label>
+        <input id="password" class="input" type="password" placeholder="••••••••" autocomplete="off" />
+        <small class="help"><b>Dica:</b> A minha data mais importante</small>
+      </div>
+
+      <div class="row">
+        <button class="btn primary" id="unlockBtn">Entrar</button>
+        <button class="btn ghost" id="clearBtn" type="button">Limpar</button>
+      </div>
+
+      <p class="note error" id="authMsg" aria-live="polite"></p>
+      <p class="note" id="audioMsg" aria-live="polite"></p>
+    </section>
+
+    <!-- Card liberado -->
+    <section class="card hidden" id="enterCard">
+      <h2 class="h2">Bem-vinda 💙</h2>
+      <p class="sub2">Agora só falta apertar o botão… </p>
+
+      <button class="btn love" id="goPuzzleBtn">
+        Feliz mais um mês, preta &lt;3
+      </button>
+
+      <p class="note" style="margin-top:10px;">
+        (se quiser “trancar” de novo, aperta no botão)
+        
+      </p>
+
+      <button class="btn ghost" id="lockBtn" type="button">Bloquear novamente</button>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">Feito com carinho</span>
+      <span class="dot">💙</span>
+      <span class="muted"></span>
+    </footer>
+  </main>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

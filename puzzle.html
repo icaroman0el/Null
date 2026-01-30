@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07142b" />
+  <title>Puzzle</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="puzzle">
+  <main class="app">
+    <header class="hero small">
+      <div class="badge">🧩 puzzle</div>
+      <h1 class="h1">Monta a foto 💙</h1>
+      <p class="sub">
+        <b></b>
+      </p>
+    </header>
+
+    <!-- Música do puzzle (autoplay) -->
+   <section class="card">
+  <h2 class="h2">Música</h2>
+
+  <div class="spPlayer"
+       data-title="Nossa música 💙"
+       data-subtitle="(coloca o nome aqui)"
+       data-cover="assets/puzzle-cover.jpg"
+       data-audio="bgmPuzzle">
+
+    <audio id="bgmPuzzle" autoplay loop preload="auto" playsinline>
+      <source src="assets/puzzle.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="spRow">
+      <img class="spCover" src="assets/puzzle-cover.jpg" alt="Capa da música" />
+
+      <div class="spMeta">
+        <div class="spTitle" id="spTitlePuzzle">Espero que lembre dela</div>
+        <div class="spSub" id="spSubPuzzle">Um a Um (Ao Vivo)</div>
+
+        <div class="spBar">
+          <span class="spTime" data-role="cur">0:00</span>
+          <input class="spSeek" data-role="seek" type="range" min="0" max="1000" value="0" />
+          <span class="spTime" data-role="dur">0:00</span>
+        </div>
+      </div>
+
+      <button class="spPlay" type="button" data-role="toggle" aria-label="Play/Pause">
+        ▶
+      </button>
+    </div>
+
+    <p class="note" data-role="hint"></p>
+  </div>
+</section>
+
+
+    <section class="card">
+      <div class="topline">
+        <div class="pill">Jogadas: <b id="turns">0</b></div>
+        <div class="row tight">
+          <button class="btn primary" id="shuffleBtn">Embaralhar</button>
+        </div>
+      </div>
+
+      <div class="boardWrap">
+        <div id="board" class="board" aria-label="Tabuleiro do puzzle"></div>
+      </div>
+
+      <p class="note" id="puzzleMsg" aria-live="polite"></p>
+    </section>
+
+    <!-- Modal de vitória -->
+    <div class="modal hidden" id="winModal" role="dialog" aria-modal="true" aria-label="Parabéns">
+      <div class="modalCard">
+        <div class="sparkle">✨</div>
+        <h2 class="h2">Parabéns! 💙</h2>
+        <p class="sub2" id="winText">Você completou o puzzle!</p>
+        <button class="btn love" id="goFinalBtn">Ir pro poema</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span class="muted">Pra começar, clica em uma das peças que fica ao lado do quadrado vazio</span>
+    </footer>
+  </main>
+
+  <script src="js/puzzle.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07142b" />
+  <title>Poema</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="final">
+  <main class="app">
+    <header class="hero small">
+      <div class="badge">📜 final</div>
+      <h1 class="h1">Pra você 💙</h1>
+      <p class="sub">Espero que goste, do meu mais profundo desejo...</p>
+    </header>
+
+    <!-- Música do poema (autoplay) -->
+    <section class="card">
+  <h2 class="h2">Música</h2>
+
+  <div class="spPlayer"
+       data-title="Pra você 💙"
+       data-subtitle="(nome da música aqui)"
+       data-cover="assets/final-cover.jpg"
+       data-audio="bgmFinal">
+
+    <audio id="bgmFinal" autoplay loop preload="auto" playsinline>
+      <source src="assets/final.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="spRow">
+      <img class="spCover" src="assets/final-cover.jpg" alt="Capa da música" />
+
+      <div class="spMeta">
+        <div class="spTitle">O poema foi inspirado na música, de mim, pra você</div>
+        <div class="spSub">Cool for the Summer</div>
+
+        <div class="spBar">
+          <span class="spTime" data-role="cur">0:00</span>
+          <input class="spSeek" data-role="seek" type="range" min="0" max="1000" value="0" />
+          <span class="spTime" data-role="dur">0:00</span>
+        </div>
+      </div>
+
+      <button class="spPlay" type="button" data-role="toggle" aria-label="Play/Pause">
+        ▶
+      </button>
+    </div>
+
+    <p class="note" data-role="hint"></p>
+  </div>
+</section>
+
+
+    <!-- Poema gigante -->
+    <section class="card poem">
+      <h2 class="h2">O Sol, A Carne e o Pulso</h2>
+      <p class="sub2 muted">Tell me what you want.</p>
+
+      <div class="poemBody" id="poemBody">
+        <p>
+         Eu disse que você é arte em tons de sol, Mas nenhuma galeria suportaria esse calor. Você não foi feita para ser apenas olhada, Foi feita para ser sentida, provada, devorada com fervor.
+        </p>
+
+        <p>
+          Seus cachos são o labirinto onde eu prendo meus dedos, Puxando de leve, ditando o ritmo da nossa respiração. Nesses olhos castanhos, vejo a promessa de todos os segredos, Enquanto o suor começa a desenhar caminhos na sua mão.
+        </p>
+
+        <p>
+          E quando eu te viro, a visão me tira o ar: Sua pele negra brilhando, um mapa estelar, divino. Minhas mãos descem famintas para o seu quadril, para te segurar, E encontro as estrias da sua bunda, o traço mais complexo e genuíno (minha paixão).
+        </p>
+
+        <p>
+   Eu beijo cada linha prateada, cada raio dessa tempestade, Adorando a textura, o volume, a humanidade da sua pele. Não há "photoshop" que supere essa verdade, É carne, é maciez, é o lugar onde eu quero que o tempo congele.
+        </p>
+
+        <p>
+       Mas o tempo não para, é curto,  ele acelera quando a gente se encaixa, quando o medo vem. E é aí que o mundo lá fora derrete e deixa de existir. Sinto você me recebendo, quente, molhada, uma faixa De fogo que me envolve e me impede de fugir.
+        </p>
+
+         <p>
+       Começa o pulso. Aquela batida surda que não vem do coração, vem do centro. Eu sinto você contrair, sinto você latejar ao meu redor, Um aperto que me chama, que me puxa mais pra dentro, Transformando gemido em prece, transformando prazer em suor.
+        </p>
+
+         <p>
+       Um ritmo elétrico, Nossos quadris batendo como ondas num verão febril. A cada estocada, eu mergulho nesse oceano, Buscando o fundo da sua alma, o ponto mais viril.
+        </p>
+
+           <p>
+       Você pulsa, eu pulso, e a sala gira em câmera lenta, O ar fica pesado, com cheiro do nosso amor e paixão. Você me arranha, me pede, e a temperatura aumenta, Até que não exista mais "eu" ou "você", só a explosão.
+        </p>
+
+           <p>
+       Ficamos ali, trêmulos, colados no depois, Com as marcas dos meus dedos na sua pele de ouro. Somos o segredo mais quente que o verão já compôs, E cada vez que você pulsa, eu encontro meu tesouro.
+        </p>
+
+        <p class="signature">
+          Feliz mais um mês, minha preta. 💙<br/>
+          <span class="muted">Com desejo, Ícaro</span>
+        </p>
+      </div>
+
+      <div class="row" style="margin-top:14px;">
+        <a class="btn ghost" href="index.html">Voltar ao início</a>
+        <a class="btn primary" href="puzzle.html">Repetir o puzzle</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">Feito com carinho 💙</span>
+    </footer>
+  </main>
+
+  <script src="js/final.js"></script>
+</body>
+</html>
