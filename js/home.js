@@ -34,9 +34,9 @@ async function autoPlayWithFallback(audioEl){
     try {
       audioEl.muted = true;
       await audioEl.play();
-      setAudioHint("🔊 Toque na tela uma vez para ativar o som.");
+      setAudioHint("");
     } catch {
-      setAudioHint("🔊 Toque na tela uma vez para ativar o som.");
+      setAudioHint("");
     }
 
     const unlockSound = async () => {
@@ -112,3 +112,4 @@ function tryUnlock(){
 
   passwordEl.focus();
 })();
+
